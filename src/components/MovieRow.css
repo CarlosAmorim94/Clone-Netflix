@@ -12,12 +12,13 @@
 }
 
 .movieRow--list {
-    width: 9999px; /* um item/filme ao lado do outro infinitamente*/
+    width: 99999999px; /* um item/filme ao lado do outro infinitamente*/
 }
 
 .movieRow--item {
     display: inline-block; /* Um item/filme ao lado do outro */
     width: 150px;
+    cursor: pointer;
 }
 
 .movieRow--item img {
