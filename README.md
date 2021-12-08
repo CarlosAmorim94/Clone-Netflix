@@ -1,3 +1,11 @@
+# Clone da Netflix
+
+Utilizando ReacjJS e API's para exibição de filmes e séries
+
+Utilizei a API do "https://www.themoviedb.org/" para consumir as imagens dos filmes e séries
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
