@@ -1,0 +1,17 @@
+footer {
+    margin: 50px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: bold;
+    transition: all ease 0.5s;
+}
+
+a:hover {
+    color: yellow;
+    padding-top: 5px;
+}

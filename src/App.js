@@ -3,11 +3,14 @@ import './App.css';
 import Tmdb from './Tmdb';
 import MovieRow from './components/MovieRow';
 import FeatureMovie from './components/FeatureMovie';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
 
   const [movieList, setMovieList] = useState([])
   const [featureData, setFeatureData] = useState(null)
+  const [blackHeader, setBlackHeader] = useState(false) /*Iniciar o header preto como false, transparente padrão lá no CSS*/
 
   useEffect(()=>{
     const loadAll = async () => {
@@ -26,17 +29,39 @@ function App() {
     loadAll()
   },[])
 
+  useEffect(()=>{
+    const scrollListener = () => {
+      if (window.scrollY > 10){
+        setBlackHeader(true)
+      } else {
+        setBlackHeader(false)
+      }
+    }
+
+    window.addEventListener('scroll', scrollListener) // Se houver scroll  vai rodar a função scrollListener definida acima
+
+    return () => {
+      window.removeEventListener('scroll', scrollListener)
+    }
+
+  },[])
+
   return (
     <div className="page">
-      Header
+
+      <Header black={blackHeader}/> {/*Passar o valor da props black que vai ser true ou false para o componente
+      */}
+
       {featureData &&
       <FeatureMovie item={featureData}/>}
-      <section className="list">
+      <section className="lists">
         {movieList.map((item, key) => (
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
-      Rodapé
+
+      <Footer />
+
     </div>
   );
 }

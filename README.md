@@ -4,6 +4,11 @@ Utilizando ReacjJS e API's para exibição de filmes e séries
 
 Utilizei a API do "https://www.themoviedb.org/" para consumir as imagens dos filmes e séries
 
+## Quando copiar o repositório instale as dependencias:
+
+npm install
+npm install @material-ui/core
+npm install @material-ui/icons
 
 
 # Getting Started with Create React App
