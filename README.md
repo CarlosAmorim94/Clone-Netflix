@@ -1,7 +1,9 @@
 # Clone da Netflix (interface inicial)
 
 ## Veja rodando no link abaixo:
-(deploy)
+https://carlos-clonenetflix.netlify.app/
+
+
 
 
 Projeto criado pare treinar conceitos de API's e reforçar atividades do ReactJS como:
