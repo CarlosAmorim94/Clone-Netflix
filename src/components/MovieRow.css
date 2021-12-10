@@ -12,7 +12,7 @@
 }
 
 .movieRow--list {
-    width: 99999999px; /* um item/filme ao lado do outro infinitamente*/
+    transition: all ease 0.5s;
 }
 
 .movieRow--item {
@@ -29,4 +29,40 @@
 
 .movieRow--item img:hover {
     transform:scale(1) /* a imagem vai ocupar 100% doe espaço definido, sem acrescentar pading nem margin */
+}
+
+.movieRow--left,
+.movieRow--right {
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;  /* Iniciar escondido */
+    transition: all ease 0.5s;
+}
+
+.movieRow:hover .movieRow--left,
+.movieRow:hover .movieRow--right {
+    opacity: 1;  /* Hover: aparecer */
+}
+
+.movieRow--left {
+    left: 0;
+}
+
+.movieRow--right {
+    right: 0;
+}
+
+@media (max-width:760px) {
+    .movieRow--right,
+    .movieRow--left {
+        opacity: 1;
+    }
 }

@@ -1,3 +1,25 @@
+# Clone da Netflix (interface inicial)
+
+## Veja rodando no link abaixo:
+(deploy)
+
+
+Projeto criado pare treinar conceitos de API's e reforçar atividades do ReactJS como:
+
+- Componentização.
+- Uso de props.
+- Manipulação de API's.
+- Aprender a utilizar a API do site "themoviedb.org"
+- treinar CSS.
+- uso da função map
+
+## Para clonar e rodar o projeto:
+npm install
+npm install @material-ui/core
+npm install @material-ui/icons
+npm i @emotion/react @emotion/styled
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
